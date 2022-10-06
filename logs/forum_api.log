@@ -1,0 +1,21 @@
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\Портфолио\forum\forum\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\User\Desktop\Портфолио\forum\forum\settings.py changed, reloading.
+[2022-10-06 22:02:09,421] INFO Watching for file changes with StatReloader]
+[2022-10-06 22:04:37,359] INFO C:\Users\User\Desktop\Портфолио\forum\api\views.py changed, reloading.]
+[2022-10-06 22:04:41,265] INFO Watching for file changes with StatReloader]
+[2022-10-06 22:04:50,579] INFO "GET /api/data?val_1=2&val_2=3 HTTP/1.1" 200 5429]
+[2022-10-06 22:04:50,662] INFO "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0]
+[2022-10-06 22:04:50,662] INFO "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0]
+[2022-10-06 22:04:50,662] INFO "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0]
+[2022-10-06 22:04:50,680] INFO "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0]
+[2022-10-06 22:04:50,680] INFO "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0]
+[2022-10-06 22:04:50,683] INFO "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0]
+[2022-10-06 22:04:50,700] INFO "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0]
+[2022-10-06 22:04:50,702] INFO "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0]
+[2022-10-06 22:04:50,703] INFO "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0]
+[2022-10-06 22:04:50,716] INFO "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0]
+[2022-10-06 22:04:50,743] INFO "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0]
+[2022-10-06 22:04:51,449] WARNING Not Found: /favicon.ico]
+[2022-10-06 22:04:51,452] WARNING "GET /favicon.ico HTTP/1.1" 404 4464]

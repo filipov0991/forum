@@ -1,0 +1,75 @@
+{% extends 'index.html' %}
+
+    {% block content %}
+        <h1>Detail Post</h1>
+        <strong>{{ post.title }}</strong>
+        <p>{{ post.description }}</p>
+        <strong>{{ post.created_at }}</strong>
+        {% if user.is_superuser or user.is_staff %}
+            {% if post.image %}
+                <hr>
+                <img src="{{ post.image.url }}">    
+            {% endif %}
+            <hr>
+            <a href="{% url 'update_post' post.pk %}" class="btn btn-primary">Edit</a>
+            <a href="{% url 'delete_post' post.pk %}" class="btn btn-danger">Delete</a>
+            <a href="{% url 'add_comment' post.pk %}" class="btn btn-info">Add Comment</a>
+            <hr>
+            {% if post.comments.all %}
+                    <h4>Comments</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">DESC</th>
+                                <th scope="col">Time</th>
+                            </tr>
+                        </thead>
+                        <br>
+                        <tbody>
+                            {% for comment in post.comments.all %}
+                                    </tr>
+                                        <th scope="row">{{ comment.created_at}}</th>
+                                        <td > {{ comment.description }}</td>
+                                    <tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif %}
+            <!-- {% if post.comments.all %}
+                <h4>Comments</h4>
+                <br>
+                {% for comment in post.comments.all %}
+                    <p>{{ comment.description }} - {{ comment.created_at }}</p>
+                    {% endfor %}
+                    <hr>
+            {% endif %} -->
+            {% else %}
+                {% if post.image %}
+                    <hr>
+                    <img src="{{ post.image.url }}">    
+                {% endif %}
+                <hr>
+                <a href="{% url 'add_comment' post.pk %}" class="btn btn-info">Add Comment</a>
+                <hr>
+                {% if post.comments.all %}
+                    <h4>Comments</h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">DESC</th>
+                                <th scope="col">Time</th>
+                            </tr>
+                        </thead>
+                        <br>
+                        <tbody>
+                            {% for comment in post.comments.all %}
+                                    </tr>
+                                        <th scope="row">{{ comment.created_at}}</th>
+                                        <td > {{ comment.description }}</td>
+                                    <tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif %}
+        {% endif %}
+    {% endblock %}

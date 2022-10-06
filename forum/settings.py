@@ -10,7 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+7$_l+y+_wdig&7ip7x&ph)ed%5x4u7-f!@j%o3706m*_++=@2'
+SECRET_KEY = '***'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -75,7 +75,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'forums',
         'USER': 'postgres',
-        'PASSWORD': 'svF1OCTT!',
+        'PASSWORD': '***',
         'PORT': '5432',
         'HOST': 'localhost',
     }
